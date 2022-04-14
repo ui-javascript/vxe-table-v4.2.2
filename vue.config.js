@@ -17,6 +17,14 @@ module.exports = {
       filename: 'index.html'
     }
   },
+  devServer: {
+    disableHostCheck: true,
+    // host: '0.0.0.0',
+    // client: {
+    //   webSocketURL: `ws://0.0.0.0:${CONFIG.port}/ws`,
+    // },
+    // allowedHosts: 'all',
+  },
   configureWebpack: {
     performance: {
       hints: false
